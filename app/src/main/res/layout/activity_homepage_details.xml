@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<!--原先相对布局的背景bfff，高度45dp-->
+    <WebView
+        android:id="@+id/wv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efff">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_title_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"/>
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_title_share"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="onClick"
+            />
+    </RelativeLayout>
+</FrameLayout>

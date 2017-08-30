@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.nick.chef">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name=".app.IApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.recipe.fragment.CollectActivity">
+        </activity>
+        <activity android:name=".main.homepage.activity.DetailActivity">
+        </activity>
+        <activity android:name=".main.recipe.fragment.RecipeDetailActivity">
+        </activity>
+        <activity android:name=".main.recipe.fragment.SearchActivity">
+        </activity>
+        <activity android:name=".main.video.activity.VideoActivity">
+        </activity>
+        <activity android:name=".main.video.activity.ChannelActivity">
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

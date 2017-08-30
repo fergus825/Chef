@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_container"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        ></android.support.design.widget.TabLayout>
+<!--为什么添加自定义的字体大小不行？还闪退！！！app:tabTextAppearance="@style/TabLayoutTextStyle"-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+</LinearLayout>

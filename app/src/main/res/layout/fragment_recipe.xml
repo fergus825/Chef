@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/sv_recipe"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/ptr_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

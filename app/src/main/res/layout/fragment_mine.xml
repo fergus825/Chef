@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFCE42"
+        android:text="我的"
+        android:textSize="25sp"
+        android:textColor="#ffe"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txt_collect_mine"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:text="我的收藏"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:drawableRight="@drawable/arrow"
+        android:paddingRight="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:text="我的下载"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:drawableRight="@drawable/arrow"
+        android:paddingRight="8dp"/>
+    <RelativeLayout
+        android:id="@+id/clearing"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:layout_marginTop="7dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="清除缓存"
+            android:textSize="22sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"/>
+        <TextView
+            android:id="@+id/more_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="xxM"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:paddingRight="8dp"
+            android:drawableRight="@drawable/arrow"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_shareto"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:text="推荐给好友"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:drawableRight="@drawable/arrow"
+        android:paddingRight="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:text="给个好评"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:drawableRight="@drawable/arrow"
+        android:paddingRight="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:text="设置"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:drawableRight="@drawable/arrow"
+        android:paddingRight="8dp"/>
+</LinearLayout>

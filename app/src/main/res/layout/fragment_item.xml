@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFEF">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        app:cardBackgroundColor="#fff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/img_item"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/txt_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_item"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="泰式柠檬蒸鲈鱼"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/txt_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_item_title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:text="菜谱来自电视节目：中华美食频道的《千味坊》 JIMMY老师教的菜，都是一些简单又美味的家常菜，这几天每天中午12点都会收看他的节目。 JIMMY老师教大家怎么看鱼是否新鲜,如果蒸出来后鱼的眼珠是鼓出来的就是新鲜 的.相反眼珠藏在里面就代表不新鲜了."
+                android:textSize="15sp"
+                android:layout_marginBottom="8dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+    <!--  <ImageView
+            android:id="@+id/img_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/txt_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_item"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="泰式柠檬蒸鲈鱼"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/txt_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_item_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="菜谱来自电视节目：中华美食频道的《千味坊》 JIMMY老师教的菜，都是一些简单又美味的家常菜，这几天每天中午12点都会收看他的节目。 JIMMY老师教大家怎么看鱼是否新鲜,如果蒸出来后鱼的眼珠是鼓出来的就是新鲜 的.相反眼珠藏在里面就代表不新鲜了."
+            android:textSize="12sp"/>-->

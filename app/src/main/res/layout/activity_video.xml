@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    >
+
+    <WebView
+        android:id="@+id/video_webview"
+        android:layout_below="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_below="@+id/video_relative"
+        android:progressDrawable="@drawable/progresslayer"
+        android:visibility="gone"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/video_relative"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#D4D4D4"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/webview_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"/>
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:src="@drawable/webview_refresh"
+            android:layout_toLeftOf="@+id/iv_share"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"/>
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cook_share_icon_in"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="onClick"
+            />
+    </RelativeLayout>
+</RelativeLayout>
