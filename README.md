@@ -7,7 +7,7 @@
 
 <div align=center>详情及分享界面</div>
 <div align=center>
-<img src="https://github.com/fergus825//raw/master/image/detailShare.gif" width="30%" height="30%"/>
+<img src="https://github.com/fergus825/Chef/raw/master/image/detailShare.gif" width="30%" height="30%"/>
 </div> </br>
 
 <div align=center>知识界面</div>
