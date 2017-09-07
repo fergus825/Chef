@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.WindowDecorActionBar;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -23,7 +25,11 @@ public class FontColorChanger {
     public static boolean MIUISetStatusBarLightMode(Window window, boolean dark) {
         boolean result = false;
         if (window != null) {
-            Class clazz = window.getClass();
+            try{
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+          /*  Class clazz = window.getClass();
             try { int darkModeFlag = 0;
                 Class layoutParams = Class.forName("android.view.MiuiWindowManager$LayoutParams");
                 Field field = layoutParams.getField("EXTRA_FLAG_STATUS_BAR_DARK_MODE");
@@ -34,7 +40,7 @@ public class FontColorChanger {
                 }
                 else{
                     extraFlagField.invoke(window, 0, darkModeFlag);//清除黑色字体
-                }
+                }*/
                 result=true;
             }catch (Exception e){ }
         }

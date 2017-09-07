@@ -14,11 +14,11 @@ public class Constants {
     public static String HOME_ITEM_DETAIL="http://interface.yueshichina.com/?act=cms_index&op=article_content&type_id=%d&article_id=%d";
     /**************************************菜谱界面的URL****************************************/
     //菜谱加载界面的Url，刷新加载只需改变cid的值即可
-    public static String RECIPE_BASEURL=" http://apis.juhe.cn/cook/index?key=d20b0be005e8977ee1322b92d48f06ad&cid=%d";
+    public static String RECIPE_BASEURL=" http://apis.juhe.cn/cook/index?key=338a153d724c8cce9f14193f4318c323&cid=%d";
     //菜谱每个item的详情页的Url id就是每个菜品item特有的属性
-    public static String RECIPE_DETAIL="http://apis.juhe.cn/cook/queryid?key=d20b0be005e8977ee1322b92d48f06ad&id=%d";
+    public static String RECIPE_DETAIL="http://apis.juhe.cn/cook/queryid?key=338a153d724c8cce9f14193f4318c323&id=%d";
     //菜谱界面的搜索功能的Url menu就是要搜索的关键字
-    public static String RECIPE_SEARCH="http://apis.juhe.cn/cook/query?key=d20b0be005e8977ee1322b92d48f06ad&menu=%s&rn=10&pn=1";
+    public static String RECIPE_SEARCH="http://apis.juhe.cn/cook/query?key=338a153d724c8cce9f14193f4318c323&menu=%s&rn=10&pn=1";
     /*************************************主页的方法*************************************************/
     //传入参数想要的tab编号和页号，获得完整的url
     public static String getHomeUrl(int tabId,int pageId){

@@ -55,7 +55,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.MyHoldler>
         List<String> albums = mDatas.get(position).getAlbums();
         Glide.with(mContext)
                 .load(albums.get(0))
-                .placeholder(R.mipmap.ic_launcher)
+                .placeholder(R.mipmap.wait)
                 .error(R.mipmap.ic_launcher)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .override(300, 200)  //重新调整大小
